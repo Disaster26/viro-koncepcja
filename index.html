@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>VIRO Tomasz Suder - PPOŻ, BHP, pierwsza pomoc i dezynfekcja, Warszawa</title>
+<meta name="description" content="Obsługa PPOŻ i BHP dla firm z Warszawy: operaty przeciwpożarowe, instrukcje bezpieczeństwa pożarowego, ewakuacje próbne, szkolenia BHP, oceny ryzyka, szkolenia z pierwszej pomocy. Tomasz Suder - strażak PSP, główny specjalista ds. BHP, ratownik medyczny.">
+<meta name="theme-color" content="#12689B">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/herom-720.webp" imagesrcset="img/herom-480.webp 480w, img/herom-720.webp 720w, img/herom-1000.webp 1000w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1400.webp" imagesrcset="img/hero-960.webp 960w, img/hero-1400.webp 1400w, img/hero-1900.webp 1900w" imagesizes="64vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Jost fb";src:local("Arial"),local("ArialMT");size-adjust:96%;ascent-override:104%}
+:root{--b:#12689B;--b2:#0D5582;--nv:#0B2A40;--nv2:#071D2D;--ink:#13212B;--mut:#53626D;--g:#EEF2F5;--line:#D8E0E6;--hh:70px;--w:min(92vw,1760px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Jost,"Jost fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(17px,.25vw + 16px,20px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:500;line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+h1{font-size:clamp(40px,3.2vw + 14px,90px);color:#fff}
+h2{font-size:clamp(32px,2.3vw + 15px,70px)}
+h3{font-size:clamp(21px,.55vw + 17px,29px);line-height:1.2;font-weight:500}
+p,figure{margin:0}
+.wrap{width:var(--w);margin-inline:auto}
+.sec{padding:clamp(64px,7vw,140px) 0}
+.g{background:var(--g)}
+.lead{font-size:clamp(18px,.45vw + 16px,24px);color:var(--mut);max-width:62ch}
+h2+.lead{margin-top:18px}
+/* przycisk - kwadrat z logo */
+.btn{display:inline-flex;align-items:center;gap:16px;min-height:58px;padding:0 26px 0 28px;border:0;background:var(--b);color:#fff;font:500 clamp(18px,.3vw + 16px,22px)/1 Jost,"Jost fb",sans-serif;text-decoration:none;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--b2)}
+.btn svg{width:18px;height:18px;flex:none;transition:transform .15s}
+.btn:hover svg{transform:translateX(3px)}
+.btn.w{background:#fff;color:var(--b)}
+.btn.w:hover{background:#E4EEF5}
+/* znak: kolo + kwadrat */
+.zn{fill:none;stroke:currentColor}
+/* naglowek */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none;color:var(--b)}
+.brand svg{width:42px;height:42px;flex:none}
+.brand b{display:block;font-weight:500;font-size:27px;line-height:1;letter-spacing:.14em;color:var(--b)}
+.brand small{display:block;font-size:14px;line-height:1.2;color:var(--mut);margin-top:4px;letter-spacing:.01em}
+.menu{display:flex;gap:clamp(14px,1.6vw,34px);margin-left:auto}
+.menu a{font-weight:500;font-size:18px;text-decoration:none;padding:24px 0 21px;border-bottom:3px solid transparent;color:var(--ink)}
+.menu a:hover{color:var(--b)}
+.menu a.on{border-bottom-color:var(--b);color:var(--b)}
+.tel{flex:none;display:flex;align-items:center;gap:10px;text-decoration:none;padding-left:clamp(14px,1.4vw,28px);border-left:1px solid var(--line);line-height:1.15;color:var(--b)}
+.tel small{display:block;font-size:14px;color:var(--mut)}
+.tel b{display:block;font-weight:600;font-size:22px;letter-spacing:.01em}
+.ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tel-m{display:none}
+.burger{display:none;flex:none;width:46px;height:46px;border:0;background:none;padding:12px;cursor:pointer}
+.burger i,.burger i::before,.burger i::after{display:block;width:22px;height:2px;background:var(--ink);position:relative;content:"";transition:transform .2s}
+.burger i::before{position:absolute;top:-7px}.burger i::after{position:absolute;top:7px}
+.top.open .burger i{background:transparent}.top.open .burger i::before{transform:translateY(7px) rotate(45deg)}.top.open .burger i::after{transform:translateY(-7px) rotate(-45deg)}
+/* hero */
+.hero{position:relative;margin-top:var(--hh);min-height:calc(100svh - var(--hh));display:flex;align-items:center;color:#fff;background:var(--b);overflow:hidden}
+.hero picture{position:absolute;top:0;bottom:0;right:0;left:36%}
+.hero picture img{width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+.hero::before{content:"";position:absolute;top:0;bottom:0;left:36%;width:18%;background:linear-gradient(90deg,var(--b),rgba(18,104,155,0));z-index:1}
+.hero .mark{position:absolute;z-index:1;left:36%;top:50%;width:min(86svh,58vw);height:min(86svh,58vw);transform:translate(-50%,-50%);color:rgba(255,255,255,.55);pointer-events:none}
+.hero .mark .zn{stroke-width:1.4;vector-effect:non-scaling-stroke}
+.hero .wrap{position:relative;z-index:2;padding:56px 0}
+.hero-in{max-width:min(100%,max(440px,29vw))}
+.hero .lead{color:#E3EEF6;margin-top:clamp(18px,2.2vh,28px);max-width:38ch}
+.hero .btn{margin-top:clamp(28px,3.6vh,44px)}
+.info{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:clamp(22px,3vh,34px);font-size:clamp(15px,.2vw + 14px,18px);color:#D3E4F0}
+.info span{display:inline-flex;align-items:center;gap:9px}
+.info span::before{content:"";width:8px;height:8px;border:1.5px solid currentColor}
+/* trzy uprawnienia */
+.ja{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:clamp(36px,5vw,120px);margin-top:clamp(40px,4vw,72px);align-items:start}
+.port{position:relative}
+.port img{width:100%;aspect-ratio:584/760;object-fit:cover;object-position:50% 12%;background:#F3F4F5}
+.port figcaption{margin-top:14px;font-size:16px;color:var(--mut)}
+.port figcaption b{display:block;color:var(--ink);font-size:21px;font-weight:500}
+.role{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(24px,2.6vw,56px)}
+.role li{border-top:2px solid var(--b);padding-top:22px}
+.role svg{width:54px;height:54px;color:var(--b)}
+.role svg .zn{stroke-width:2.2}
+.role h3{margin-top:18px}
+.role p{margin-top:10px;color:var(--mut);font-size:.96em}
+.cyt{margin-top:clamp(36px,3.6vw,60px);padding-top:clamp(24px,2.4vw,36px);border-top:1px solid var(--line);font-size:clamp(21px,.7vw + 17px,32px);line-height:1.4;font-weight:400;max-width:44ch;color:var(--ink)}
+.cyt small{display:block;margin-top:12px;font-size:16px;color:var(--mut)}
+/* uslugi */
+.hd{display:flex;align-items:flex-end;justify-content:space-between;gap:24px 60px;flex-wrap:wrap}
+.hd>div{max-width:900px}
+.us{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:0 clamp(28px,3vw,64px);margin-top:clamp(36px,3.6vw,60px)}
+.us article{border-top:1px solid #C9D4DC;padding:24px 0 30px}
+.us h3{display:flex;gap:14px;align-items:baseline}
+.us h3::before{content:"";flex:none;width:11px;height:11px;border:2px solid var(--b);transform:translateY(-1px)}
+.us p{margin-top:10px;color:var(--mut);font-size:.96em;padding-left:25px}
+.ppoz{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(32px,4vw,90px);align-items:start}
+.ppoz .us{grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.fot{margin-top:clamp(36px,3.6vw,60px)}
+.ph{display:block;width:100%;padding:0;border:0;background:var(--g);cursor:zoom-in;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.ph:hover img{transform:scale(1.03)}
+.fot .ph{aspect-ratio:840/383}
+figcaption.src{font-size:13px;color:var(--mut);margin-top:8px}
+.faq{margin-top:28px;border-top:2px solid var(--b)}
+.faq details{border-bottom:1px solid #C9D4DC}
+.faq summary{list-style:none;cursor:pointer;padding:20px 44px 20px 0;position:relative;font-size:clamp(19px,.4vw + 17px,24px);font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;border:2px solid var(--b);border-radius:50%;transform:translateY(-50%);transition:border-radius .2s,background .2s}
+.faq details[open] summary::after{border-radius:0;background:var(--b)}
+.faq .a{padding:0 0 22px;color:var(--mut);font-size:.96em}
+.faq .a p+p,.faq .a ul{margin-top:10px}
+.faq ul{padding-left:20px}
+/* pierwsza pomoc - ciemna sekcja */
+.dk{background:var(--nv);color:#fff}
+.dk h2,.dk h3{color:#fff}
+.dk .lead{color:#B9CCDA}
+.pp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,120px);align-items:center}
+.pp .ph{aspect-ratio:1000/838;background:#123A55}
+.pp .btn{margin-top:32px}
+.dk figcaption.src{color:#8EA7B8}
+.pl{list-style:none;margin:26px 0 0;padding:0}
+.pl li{padding:12px 0 12px 26px;border-top:1px solid #23465F;position:relative}
+.pl li::before{content:"";position:absolute;left:0;top:21px;width:10px;height:10px;border:1.5px solid #8FC3E6;border-radius:50%}
+/* dezynfekcja */
+.dz{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,1.6vw,32px);margin-top:clamp(36px,3.6vw,60px)}
+.dz article{background:#fff;padding:clamp(24px,2.2vw,40px)}
+.dz svg{width:46px;height:46px;color:var(--b)}
+.dz svg .zn{stroke-width:2.2}
+.dz h3{margin-top:16px}
+.dz p{margin-top:10px;color:var(--mut);font-size:.96em}
+.dz ul{margin:14px 0 0;padding:0;list-style:none;font-size:.94em}
+.dz li{padding:8px 0;border-top:1px solid var(--line)}
+/* kontakt */
+.kt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(32px,5vw,110px);margin-top:clamp(36px,3.6vw,60px)}
+.dane{display:grid;gap:22px;align-content:start}
+.dane small{display:block;font-size:15px;color:var(--mut)}
+.dane a{font-weight:500;font-size:clamp(22px,.6vw + 18px,30px);line-height:1.2;text-decoration:none;color:var(--b)}
+.dane a:hover{color:var(--b2)}
+.mapa{background:#DCE3E8;min-height:300px;position:relative;margin-top:8px}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:var(--g);padding:clamp(22px,2.4vw,44px);align-content:start}
+form h3{grid-column:1/-1}
+form label{display:grid;gap:6px;font-size:15px;color:var(--mut)}
+form .full{grid-column:1/-1}
+input,select,textarea{font:inherit;color:var(--ink);border:1px solid #C3CDD5;border-radius:0;padding:13px 14px;background:#fff;width:100%;min-width:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--b);outline-offset:1px;border-color:var(--b)}
+[aria-invalid="true"]{border-color:#B3261E}
+textarea{min-height:120px;resize:vertical}
+form .btn{justify-self:start}
+.msg{grid-column:1/-1;background:#E3F0F8;color:#0B3550;padding:14px 16px;border-left:4px solid var(--b)}
+.note2{grid-column:1/-1;font-size:14px;color:var(--mut)}
+/* stopka */
+footer{background:var(--nv2);color:#A9BCCB;padding:clamp(48px,5vw,80px) 0 28px;font-size:16px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px clamp(24px,3vw,56px)}
+footer h4{margin:0 0 12px;color:#fff;font-weight:500;font-size:20px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:6px 0}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+.fb{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:clamp(36px,4vw,60px);padding-top:22px;border-top:1px solid #1D3B52;font-size:14px}
+.fb .cr{max-width:90ch}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(5,16,26,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:56px 12px 20px}
+.lb.on{display:flex}
+.lb img{max-width:min(94vw,1400px);max-height:80vh;width:auto;height:auto;object-fit:contain}
+.lb p{color:#ddd;margin-top:14px;text-align:center;font-size:16px;max-width:70ch}
+.lb button{position:absolute;width:52px;height:52px;border:0;background:rgba(255,255,255,.12);color:#fff;cursor:pointer;display:grid;place-items:center;font-size:30px;line-height:1}
+.lb button:hover{background:rgba(255,255,255,.24)}
+.lb svg{width:20px;height:20px}
+.lb .x{top:12px;right:12px}
+.lb .pv{left:12px;top:50%;transform:translateY(-50%)}
+.lb .nx{right:12px;top:50%;transform:translateY(-50%)}
+.lb .pv svg{transform:scaleX(-1)}
+.mob{display:none}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+@media (min-width:1800px){.us{grid-template-columns:repeat(4,minmax(0,1fr))}.ppoz .us{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1300px){.tel small{display:none}.menu{gap:16px}.menu a{font-size:17px}}
+@media (max-width:1140px){
+.menu,.tel{display:none}
+.burger{display:block}
+.tel-m{display:grid;flex:none;place-items:center;width:46px;height:46px;margin-left:auto;color:var(--b);text-decoration:none}
+.top.open .menu{display:flex;position:fixed;top:var(--hh);left:0;right:0;flex-direction:column;gap:0;background:#fff;padding:8px 4vw 20px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(0,0,0,.08)}
+.top.open .menu a{padding:15px 0;border-bottom:1px solid var(--line);font-size:19px}
+.top.open .menu a.on{border-bottom-color:var(--line)}
+.ja,.ppoz,.pp,.kt{grid-template-columns:1fr}
+.port{max-width:420px}
+.dz{grid-template-columns:1fr}
+.fg{grid-template-columns:1fr 1fr}
+.fg>div:first-child{grid-column:1/-1}
+}
+@media (min-width:761px) and (max-width:1140px){.hero picture,.hero::before,.hero .mark{left:44%}.hero-in{max-width:40vw}}
+@media (max-width:900px){.role{grid-template-columns:1fr}.role li{display:grid;grid-template-columns:54px minmax(0,1fr);gap:0 18px;padding:18px 0 22px}.role svg{grid-row:span 2;width:44px;height:44px}.role h3{margin-top:0}.role p{grid-column:2;margin-top:6px}}
+@media (max-width:760px){
+:root{--hh:60px}
+.brand svg{width:36px;height:36px}
+.brand b{font-size:23px}
+.brand small{font-size:13px}
+.hero{flex-direction:column;align-items:stretch;justify-content:flex-start}
+.hero::before{display:none}
+.hero picture{position:relative;inset:auto;flex:1 1 auto;min-height:min(52vw,24svh);max-height:58svh;display:block}
+.hero picture img{position:absolute;inset:0;object-position:50% 4%}
+.hero .mark{left:auto;right:-14vw;top:auto;bottom:-30vw;width:78vw;height:78vw;transform:none;color:rgba(255,255,255,.22)}
+.hero .wrap{flex:0 0 auto;padding:22px 0 26px}
+.hero-in{max-width:none}
+h1{font-size:clamp(28px,7.8vw,38px)}
+.hero .lead{font-size:16.5px;margin-top:12px;line-height:1.5}
+.hero .btn{margin-top:24px;min-height:52px;font-size:18px}
+.info{margin-top:16px;font-size:14.5px;gap:4px 16px}
+form{grid-template-columns:1fr}
+.mob{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1.4fr;transform:translateY(110%);transition:transform .25s;box-shadow:0 -6px 20px rgba(0,0,0,.12)}
+.mob.widac{transform:none}
+.mob a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;text-decoration:none;font-weight:500;font-size:17px}
+.mob .a1{background:#fff;color:var(--b)}
+.mob .a2{background:var(--b);color:#fff}
+footer{padding-bottom:84px}
+}
+@media (max-width:760px){.port{max-width:300px}}
+@media (max-width:420px){.top .wrap{gap:8px}.fg{grid-template-columns:1fr 1fr;gap:24px 16px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ph img{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="ar" viewBox="0 0 20 20"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+<symbol id="tl" viewBox="0 0 24 24"><path d="M6.6 3.5h3l1.4 4.2-2 1.3a11 11 0 0 0 6 6l1.3-2 4.2 1.4v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2.1-2.2z"/></symbol>
+</svg>
+<header class="top" id="top">
+<div class="wrap">
+<a class="brand" href="#start" aria-label="VIRO Tomasz Suder - strona główna">
+<svg viewBox="0 0 64 64" aria-hidden="true"><circle class="zn" cx="32" cy="31.5" r="22.5" stroke-width="2.6"/><rect class="zn" x="14.2" y="18.6" width="35.6" height="35.6" stroke-width="2.6"/></svg>
+<span><b>VIRO</b><small>Tomasz Suder</small></span>
+</a>
+<nav class="menu" aria-label="Menu główne">
+<a href="#o-mnie">O mnie</a>
+<a href="#ppoz">PPOŻ</a>
+<a href="#bhp">BHP</a>
+<a href="#pierwsza-pomoc">Pierwsza pomoc</a>
+<a href="#dezynfekcja">Dezynfekcja</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+<a class="tel" href="tel:+48609504940"><svg class="ic" aria-hidden="true"><use href="#tl"/></svg><span><small>Zadzwoń</small><b>609 504 940</b></span></a>
+<a class="tel-m" href="tel:+48609504940" aria-label="Zadzwoń: 609 504 940"><svg class="ic" aria-hidden="true"><use href="#tl"/></svg></a>
+<button class="burger" id="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="top"><i></i></button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="start">
+<picture>
+<source media="(max-width:760px)" srcset="img/herom-480.webp 480w, img/herom-720.webp 720w, img/herom-1000.webp 1000w" sizes="100vw">
+<img src="img/hero-1400.webp" srcset="img/hero-960.webp 960w, img/hero-1400.webp 1400w, img/hero-1900.webp 1900w" sizes="64vw" width="1400" height="1236" alt="Szkolenie z pierwszej pomocy: uczestniczka ćwiczy uciskanie klatki piersiowej na fantomie" fetchpriority="high">
+</picture>
+<div class="wrap">
+<div class="hero-in">
+<h1>Zapobiegać zagrożeniom i umieć na nie reagować</h1>
+<p class="lead">PPOŻ, BHP i pierwsza pomoc dla firm: dokumentacja, szkolenia i stały nadzór. Prowadzi strażak PSP, główny specjalista ds. BHP i ratownik medyczny w jednej osobie.</p>
+<a class="btn w" href="#kontakt">Zapytaj o wycenę <svg aria-hidden="true"><use href="#ar"/></svg></a>
+<p class="info"><span>Viro Tomasz Suder, Warszawa</span><span>operaty, instrukcje, szkolenia</span></p>
+</div>
+</div>
+</section>
+
+<section class="sec" id="o-mnie">
+<div class="wrap">
+<h2>Trzy specjalizacje, jeden opiekun bezpieczeństwa</h2>
+<p class="lead">Nazywam się Tomasz Suder. Wspieram pracodawców i osoby kierujące pracownikami w obowiązkach związanych z bezpieczeństwem ludzi - od dokumentacji po szkolenie całej załogi.</p>
+<div class="ja">
+<figure class="port"><img src="img/portret-400.webp" srcset="img/portret-400.webp 400w, img/portret-584.webp 584w" sizes="(max-width:1140px) 420px, 28vw" width="400" height="577" loading="lazy" alt="Tomasz Suder"><figcaption><b>Tomasz Suder</b>właściciel firmy Viro</figcaption></figure>
+<div>
+<ul class="role">
+<li><svg viewBox="0 0 64 64" aria-hidden="true"><circle class="zn" cx="32" cy="32" r="24"/></svg><h3>Bezpieczeństwo pożarowe</h3><p>Absolwent studiów z inżynierii bezpieczeństwa (specjalność bezpieczeństwo pożarowe) w Szkole Głównej Służby Pożarniczej, specjalista ochrony przeciwpożarowej. Od 2006 roku w Państwowej Straży Pożarnej.</p></li>
+<li><svg viewBox="0 0 64 64" aria-hidden="true"><rect class="zn" x="10" y="10" width="44" height="44"/></svg><h3>BHP</h3><p>Studia podyplomowe z bezpieczeństwa i higieny pracy oraz kilkuletnia praktyka zawodowa - tytuł głównego specjalisty ds. BHP.</p></li>
+<li><svg viewBox="0 0 64 64" aria-hidden="true"><circle class="zn" cx="32" cy="31" r="22"/><rect class="zn" x="14.5" y="18.5" width="35" height="35"/></svg><h3>Ratownictwo medyczne</h3><p>W 2019 roku ukończył studia z ratownictwa medycznego i uzyskał tytuł ratownika medycznego.</p></li>
+</ul>
+<p class="cyt">W codziennej pracy za cel obieram sobie zapobieganie sytuacjom zagrożenia lub reagowanie na nie.<small>Tomasz Suder</small></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec g" id="ppoz">
+<div class="wrap">
+<h2>Ochrona przeciwpożarowa</h2>
+<p class="lead">Kompleksowa obsługa PPOŻ: stała współpraca, w ramach której prowadzę obowiązkowe szkolenia pracowników, ewakuacje obiektu i bieżącą dokumentację.</p>
+<div class="ppoz">
+<div class="us">
+<article><h3>Audyty bezpieczeństwa pożarowego</h3><p>Wizja lokalna w zakładzie pracy, a po niej protokół z uwagami i zaleceniami.</p></article>
+<article><h3>Instrukcje bezpieczeństwa pożarowego</h3><p>Opracowanie i aktualizacja instrukcji dla obiektu.</p></article>
+<article><h3>Operaty przeciwpożarowe</h3><p>Operat do wniosku o zezwolenie na zbieranie lub przetwarzanie odpadów.</p></article>
+<article><h3>Ewakuacje próbne</h3><p>Przeprowadzenie ewakuacji z dokumentacją i obowiązkowym powiadomieniem właściwej komendy PSP.</p></article>
+<article><h3>Szkolenia PPOŻ</h3><p>Praktyczne szkolenie z użycia podręcznego sprzętu gaśniczego.</p></article>
+<article><h3>Oceny zagrożenia wybuchem</h3><p>Ocena zagrożenia wybuchem, a w razie potrzeby dokument zabezpieczenia przed wybuchem.</p></article>
+</div>
+<div>
+<figure class="fot" style="margin-top:0"><button class="ph" type="button" data-full="img/gasnica-840.webp"><img src="img/gasnica-560.webp" srcset="img/gasnica-560.webp 560w, img/gasnica-840.webp 840w" sizes="(max-width:1140px) 92vw, 36vw" width="560" height="255" loading="lazy" alt="Praktyczne szkolenie z gaszenia ognia gaśnicą"></button><figcaption class="src">Zdjęcie przykładowe</figcaption></figure>
+<div class="faq">
+<details><summary>Czy muszę mieć operat przeciwpożarowy?</summary><div class="a"><p>Operat przeciwpożarowy jest częścią wniosków o zezwolenie na zbieranie odpadów, zezwolenie na przetwarzanie odpadów oraz pozwolenie na wytwarzanie odpadów uwzględniające zbieranie lub przetwarzanie.</p><p>Obowiązek opracowania operatu uzgodnionego z komendantem powiatowym (miejskim) PSP dotyczy więc firm, które starają się o te zezwolenia.</p></div></details>
+<details><summary>Czy muszę mieć instrukcję bezpieczeństwa pożarowego?</summary><div class="a"><p>Instrukcja jest wymagana w obiektach lub ich częściach stanowiących odrębne strefy pożarowe, przeznaczonych na funkcje użyteczności publicznej, zamieszkania zbiorowego, produkcyjne, magazynowe i inwentarskie, w których występuje strefa zagrożenia wybuchem, albo gdy:</p><ul><li>kubatura brutto budynku lub strefy pożarowej przekracza 1000 m³ (nie dotyczy budynków inwentarskich),</li><li>kubatura brutto budynku inwentarskiego przekracza 1500 m³,</li><li>powierzchnia strefy pożarowej obiektu innego niż budynek przekracza 1000 m².</li></ul></div></details>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="bhp">
+<div class="wrap">
+<div class="hd">
+<div>
+<h2>Bezpieczeństwo i higiena pracy</h2>
+<p class="lead">Kompleksowa obsługa BHP to pakiet usług: szkolenia, polityka bezpieczeństwa i audyty. Zakres każdorazowo ustalamy razem.</p>
+</div>
+<a class="btn" href="#kontakt">Zapytaj o obsługę BHP <svg aria-hidden="true"><use href="#ar"/></svg></a>
+</div>
+<div class="us">
+<article><h3>Szkolenia wstępne i okresowe</h3><p>Zgodnie z rozporządzeniem w sprawie szkolenia w dziedzinie BHP, plus szkolenia dodatkowe według potrzeb firmy.</p></article>
+<article><h3>Audyty stanu BHP</h3><p>Kontrola zakończona raportem z nieprawidłowościami i propozycjami poprawy.</p></article>
+<article><h3>Ocena ryzyka zawodowego</h3><p>Karty oceny ryzyka dla poszczególnych stanowisk pracy.</p></article>
+<article><h3>Instrukcje stanowiskowe</h3><p>Instrukcje BHP, także w formie obrazkowej i w standardach graficznych firmy.</p></article>
+<article><h3>Dokumentacja powypadkowa</h3><p>Komplet dokumentów po wypadku przy pracy lub w drodze do i z pracy.</p></article>
+<article><h3>Pozostała dokumentacja</h3><p>Pomoc w opracowaniu innych dokumentów z obszaru BHP.</p></article>
+</div>
+</div>
+</section>
+
+<section class="sec dk" id="pierwsza-pomoc">
+<div class="wrap pp">
+<figure><button class="ph" type="button" data-full="img/pp-1000.webp"><img src="img/pp-560.webp" srcset="img/pp-560.webp 560w, img/pp-1000.webp 1000w" sizes="(max-width:1140px) 92vw, 44vw" width="560" height="469" loading="lazy" alt="Ćwiczenie resuscytacji na fantomie podczas szkolenia"></button><figcaption class="src">Zdjęcie przykładowe</figcaption></figure>
+<div>
+<h2>Pierwsza pomoc prowadzona przez ratownika</h2>
+<p class="lead">Szkolenie z pierwszej pomocy przedmedycznej dla różnych grup zawodowych, w zakresie ustalonym z firmą. Prowadzi ratownik medyczny, który na co dzień służy w straży pożarnej.</p>
+<ul class="pl">
+<li>Program dopasowany do grupy zawodowej</li>
+<li>Zakres i termin ustalane z firmą</li>
+</ul>
+<a class="btn w" href="#kontakt">Zapytaj o szkolenie <svg aria-hidden="true"><use href="#ar"/></svg></a>
+</div>
+</div>
+</section>
+
+<section class="sec g" id="dezynfekcja">
+<div class="wrap">
+<h2>Dezynfekcja pomieszczeń</h2>
+<p class="lead">Trzy metody do wyboru - dobieram je do pomieszczenia i potrzeb.</p>
+<div class="dz">
+<article><svg viewBox="0 0 64 64" aria-hidden="true"><circle class="zn" cx="32" cy="32" r="22"/><circle class="zn" cx="32" cy="32" r="10"/></svg><h3>Ozonowanie</h3><p>Bez chemii - środkiem biobójczym jest ozon wytwarzany z tlenu z powietrza.</p><ul><li>Niszczy mikroorganizmy, wirusy, pleśnie, grzyby i alergeny</li><li>Usuwa intensywne zapachy</li><li>Potrzebny jest tylko prąd</li></ul></article>
+<article><svg viewBox="0 0 64 64" aria-hidden="true"><rect class="zn" x="12" y="12" width="40" height="40"/><rect class="zn" x="24" y="24" width="16" height="16"/></svg><h3>Alkohol wysokoprocentowy</h3><p>Alkohol o stężeniu powyżej 60%, nanoszony natryskowo lub ręcznie na powierzchnie.</p><ul><li>Metoda stosowana w przestrzeni publicznej</li><li>Po chwili odparowuje, nie zostawia śladów</li></ul></article>
+<article><svg viewBox="0 0 64 64" aria-hidden="true"><circle class="zn" cx="32" cy="32" r="22"/><rect class="zn" x="21" y="21" width="22" height="22"/></svg><h3>Fumigacja</h3><p>Nadtlenek wodoru w postaci mgły - metoda z laboratoriów biologicznych i pomieszczeń medycznych.</p><ul><li>Mgła dociera do trudno dostępnych miejsc</li><li>Rozpada się do tlenu i wody, bez chemikaliów na wyposażeniu</li></ul></article>
+</div>
+</div>
+</section>
+
+<section class="sec" id="kontakt">
+<div class="wrap">
+<h2>Kontakt</h2>
+<p class="lead">Proszę napisać, czego dotyczy sprawa i ilu pracowników ma firma - odpowiem z propozycją zakresu i terminu.</p>
+<div class="kt">
+<div class="dane">
+<div><small>Telefon</small><a href="tel:+48609504940">609 504 940</a></div>
+<div><small>E-mail</small><a href="mailto:biuro@viro.biz.pl">biuro@viro.biz.pl</a></div>
+<div><small>Adres</small><p>Viro Tomasz Suder<br>ul. Zabłocińska 8/55, 01-697 Warszawa<br>NIP 658 189 86 25</p></div>
+<div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Zab%C5%82oci%C5%84ska%208%2C%2001-697%20Warszawa&amp;z=14&amp;output=embed" data-title="Mapa: ul. Zabłocińska 8, Warszawa"></div>
+</div>
+<form id="form" novalidate>
+<h3>Zapytaj o wycenę</h3>
+<label>Imię i nazwisko<input name="n" required autocomplete="name"></label>
+<label>Firma<input name="f" autocomplete="organization"></label>
+<label>E-mail<input name="e" type="email" required autocomplete="email"></label>
+<label>Telefon<input name="t" type="tel" autocomplete="tel"></label>
+<label class="full">Czego dotyczy zapytanie<select name="s"><option>Obsługa PPOŻ</option><option>Obsługa BHP</option><option>Szkolenie z pierwszej pomocy</option><option>Dezynfekcja</option><option>Inne</option></select></label>
+<label class="full">Wiadomość<textarea name="w" required></textarea></label>
+<button class="btn" type="submit">Wyślij zapytanie <svg aria-hidden="true"><use href="#ar"/></svg></button>
+<p class="msg" id="msg" hidden>Dziękuję! To podgląd strony, więc wiadomość nie została wysłana. Na docelowej stronie trafi prosto na biuro@viro.biz.pl.</p>
+<p class="note2">Formularz pokazowy w podglądzie - nic nie jest wysyłane.</p>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+<div><h4>VIRO Tomasz Suder</h4><p>PPOŻ, BHP, pierwsza pomoc i dezynfekcja dla firm.</p></div>
+<div><h4>Usługi</h4><ul><li><a href="#ppoz">PPOŻ</a></li><li><a href="#bhp">BHP</a></li><li><a href="#pierwsza-pomoc">Pierwsza pomoc</a></li><li><a href="#dezynfekcja">Dezynfekcja</a></li></ul></div>
+<div><h4>Kontakt</h4><ul><li><a href="tel:+48609504940">609 504 940</a></li><li><a href="mailto:biuro@viro.biz.pl">biuro@viro.biz.pl</a></li></ul></div>
+<div><h4>Adres</h4><p>ul. Zabłocińska 8/55<br>01-697 Warszawa</p></div>
+</div>
+<div class="fb"><span class="cr">© <span id="rok">2026</span> Viro Tomasz Suder. Podgląd koncepcji strony. Zdjęcia przykładowe z Wikimedia Commons: szkolenie z pierwszej pomocy (domena publiczna), First Heart Foundations Network (CC BY-SA 4.0), Oregon Department of Transportation (CC BY 2.0).</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=viro.biz.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+</div>
+</footer>
+
+<nav class="mob" id="mob" aria-label="Szybki kontakt"><a class="a1" href="tel:+48609504940"><svg class="ic" aria-hidden="true"><use href="#tl"/></svg>Zadzwoń</a><a class="a2" href="#kontakt">Zapytaj o wycenę</a></nav>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+<button class="x" type="button" aria-label="Zamknij">×</button>
+<button class="pv" type="button" aria-label="Poprzednie zdjęcie"><svg aria-hidden="true"><use href="#ar"/></svg></button>
+<img alt="">
+<p></p>
+<button class="nx" type="button" aria-label="Następne zdjęcie"><svg aria-hidden="true"><use href="#ar"/></svg></button>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
